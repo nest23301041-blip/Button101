@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+  <style>
+    body {
+    background-color: black;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .button{
+        display: flex;
+        gap: 80px;
+    }
+    .btn1{
+     width: 180px;
+     height: 60px;
+     color: #00ffcc;
+     background-color: black;
+     border-radius: 12px;
+     border: 3px solid  #00ffcc;
+    }
+    .btn1:hover{
+        color: #000;
+        background: #00ffcc;
+        box-shadow: 
+        0 0 10px #00ffcc,
+        0 0 30px #00ffcc,
+        0 0 70px #00ffcc;
+        text-shadow: 
+        0 0 30px black,
+        0 0 50px black,
+        0 0 90px black;
+    }
+    .btn2{
+     width: 180px;
+     height: 60px;
+     color: white;
+     background:linear-gradient(45deg, #7a0ae4,#f00279);
+     background-size: 200% 200%;
+     border-radius: 30px;
+     border: 0px solid black;
+     text-shadow: 
+     0 0 10px white,
+     0 0 20px white,
+     0 0 60px white;
+
+     transition: transform 0.3s ease ;
+    }
+    .btn2:hover{
+        background-position: 100% 100%;
+       transform: scale(1.1px);
+
+    }
+    .btn3{
+     width: 180px;
+     height: 60px;
+     color: white;
+     background-color: black;
+     border-radius: 12px;
+     border: 3px solid white ;
+    }
+    .btn3:hover{
+        color: #FA2BB5;
+        text-shadow: 
+        0 0 20px #FA2BB5,
+        0 0 30px #FA2BB5,
+        0 0 70px #FA2BB5;
+        box-shadow: 
+        0 0 10px #AB0CFA,
+        0 0 30px #AB0CFA,
+        0 0 70px #AB0CFA;
+        border: 5px solid #AB0CFA ;
+    }
+    h1{
+        color: white;
+        text-shadow: 
+          0 0 10px white,
+          0 0 20px white,
+          0 0 60px white;
+    }
+    @media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+  </style>
+</head>
+<body>
+    <h1><strong>Mandakhnran Button Test Website </strong></h1>
+    <div class="button">
+    <button class="btn1"><strong>BUTTON HOVER TEST</strong></button>
+    <button class="btn2"><strong>BUTTON TEST 2 GRADIENT</strong></button>
+    <button class="btn3"><strong>BUTTON TEST 2 OUT LINE GLOW</strong></button>
+    </div>
+</body>
+</html>
